@@ -1,0 +1,46 @@
+{
+  "name": "starter-vue",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "author": "David Dong <hi@daviddong.me>",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  },
+  "dependencies": {
+    "@tanstack/vue-query": "^5.37.1",
+    "@tanstack/vue-query-devtools": "^5.37.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-vue-next": "^0.378.0",
+    "pinia": "^2.1.7",
+    "radix-vue": "^1.8.0",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7",
+    "vue": "^3.4.21",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.18.1",
+    "@types/node": "^20.12.12",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.19",
+    "eslint": "9.2.0",
+    "lint-staged": "^15.2.2",
+    "postcss": "^8.4.38",
+    "simple-git-hooks": "^2.11.1",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-vue-devtools": "^7.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
